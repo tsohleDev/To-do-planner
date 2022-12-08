@@ -21,7 +21,7 @@ class ToDoList {
         return;
       }
 
-      task.index = this.array.length;
+      task.index = this.array.length + 1;
       this.array.push(task);
       this.#appendToDIv(task);
       this.store();
@@ -29,7 +29,8 @@ class ToDoList {
 
     remove = (task) => {
       const i = task.index;
-      this.array.splice(i, 1);
+      this.array.splice(i - 1, 1);
+      task.removeSelf();
       this.store();
     }
 
@@ -58,7 +59,7 @@ class ToDoList {
 
       let string = '';
       this.array.forEach((task, index) => {
-        task.index = index;
+        task.index = index + 1;
         string = `${string}${JSON.stringify(task)}|`;
       });
       string = string.substring(0, string.length - 1);

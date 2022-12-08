@@ -1,6 +1,6 @@
 class Task {
   constructor(description, completed, list) {
-    this.index = list.count;
+    this.index = list.count + 1;
     this.completed = completed;
     this.description = description;
 
