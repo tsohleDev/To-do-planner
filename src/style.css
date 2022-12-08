@@ -8,6 +8,10 @@ body {
   justify-content: space-between;
 }
 
+#head__button {
+  width: 10%;
+}
+
 #description {
   grid-column: 1/4;
 }
@@ -17,11 +21,21 @@ button {
   background-color: transparent;
 }
 
+i {
+  font-size: 3vw;
+  text-align: center;
+}
+
+i:hover {
+  font-size: 4vw;
+  opacity: 0.5;
+}
+
 div {
   background-color: #fff;
   border-top: 2px solid rgb(242, 242, 242);
   display: grid;
-  grid-template-columns: 10% 85% 5%;
+  grid-template-columns: 10% 80% 10%;
 }
 
 input {
