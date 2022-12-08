@@ -1,26 +1,22 @@
 import './style.css';
+import ToDoList from './list.js';
 import Task from './task.js';
 
 const section = document.querySelector('#list');
-const list = [new Task(5, 'Read', false), new Task(1, 'Eat', true), new Task(2, 'Write', false)];
+const addButton = document.querySelector('.add__task');
+const description = document.querySelector('#description');
+const removeAll = document.querySelector('#clear');
+const list = new ToDoList(section);
 
-const loadItems = () => {
-  list.sort((a, b) => a.index - b.index);
+addButton.addEventListener('click', () => {
+  list.add(new Task(description.value, false, list));
+  description.value = null;
+});
 
-  list.forEach((task) => {
-    const { description } = task;
+removeAll.addEventListener('click', () => {
+  list.removeAll();
+});
 
-    const div = document.createElement('div');
-    const display = [document.createElement('input'), document.createElement('input'), document.createElement('button')];
-    display[0].type = 'checkbox';
-    display[1].readOnly = true;
-    display[1].value = description;
-    display[2].innerHTML = '<i class="fa-solid fa-ellipsis-vertical"></i>';
-    display.forEach((element) => {
-      div.appendChild(element);
-    });
-    section.appendChild(div);
-  });
-};
-
-loadItems();
+window.addEventListener('DOMContentLoaded', () => {
+  list.loadFromStorage();
+});
