@@ -1,4 +1,5 @@
 import CheckBox from "./checkBox.js";
+import TextBox from "./textBox.js";
 
 class Task {
   constructor(description, completed, list) {
@@ -7,8 +8,7 @@ class Task {
     this.description = description;
 
     this.checkBox = new CheckBox(this, list)
-    this.textBox = document.createElement('input');
-    this.textBox.value = description;
+    this.textBox = new TextBox(this, list).node;
     this.button = document.createElement('button');
     this.button.addEventListener('click', () => {
       if (!this.#readOnly) list.remove(this);

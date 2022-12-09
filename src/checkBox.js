@@ -2,19 +2,13 @@ class CheckBox {
     constructor (task, list){
         this.node = document.createElement('input');
         this.node.type = 'checkbox';
+        this.node.checked = task.completed
 
-        this.checkbox.addEventListener('change', () => {
-            task.complete = this.node.checked
+        this.node.addEventListener('change', () => {
+            task.completed = this.node.checked
             list.store()
         })
     }
-
-    /**
-     * @param {boolean} bool
-     */
-    set complete (bool){
-        this.node.checked = bool
-    }
 }
 
-export default Completion
+export default CheckBox
