@@ -1,13 +1,14 @@
+import CheckBox from './checkBox.js';
+import TextBox from './textBox.js';
+
 class Task {
   constructor(description, completed, list) {
     this.index = list.count + 1;
     this.completed = completed;
     this.description = description;
 
-    this.checkBox = document.createElement('input');
-    this.checkBox.type = 'checkbox';
-    this.textBox = document.createElement('input');
-    this.textBox.value = description;
+    this.checkBox = new CheckBox(this, list);
+    this.textBox = new TextBox(this, list).node;
     this.button = document.createElement('button');
     this.button.addEventListener('click', () => {
       if (!this.#readOnly) list.remove(this);
@@ -42,11 +43,11 @@ class Task {
   }
 
   removeSelf = () => {
-    this.checkBox.parentNode.remove();
+    this.checkBox.node.parentNode.remove();
   }
 
   appendTo(div) {
-    div.appendChild(this.checkBox);
+    div.appendChild(this.checkBox.node);
     div.appendChild(this.textBox);
     div.appendChild(this.save);
     div.appendChild(this.button);
