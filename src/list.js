@@ -35,11 +35,14 @@ class ToDoList {
     }
 
     removeAll = () => {
-      this.array.forEach((task) => {
-        task.removeSelf();
+      this.array = this.array.filter((task) => {
+        if (task.completed) {
+          task.removeSelf();
+        }
+
+        return !task.completed;
       });
 
-      this.array = [];
       this.store();
     }
 
