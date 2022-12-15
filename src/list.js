@@ -17,7 +17,7 @@ class ToDoList {
   }
 
   add = (task) => {
-    if (!task.textBox.value) {
+    if (!task || typeof task !== 'object' || !task.textBox.value) {
       return;
     }
 
