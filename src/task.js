@@ -10,6 +10,7 @@ class Task {
     this.checkBox = new CheckBox(this, list);
     this.textBox = new TextBox(this, list).node;
     this.button = document.createElement('button');
+    this.save = document.createElement('button');
     this.button.addEventListener('click', () => {
       if (!this.#readOnly) list.remove(this);
 

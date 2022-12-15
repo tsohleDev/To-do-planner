@@ -14,7 +14,7 @@ addButton.addEventListener('click', () => {
 });
 
 removeAll.addEventListener('click', () => {
-  list.removeAll();
+  list.removeAllComplete();
 });
 
 window.addEventListener('DOMContentLoaded', () => {
