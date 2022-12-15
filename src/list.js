@@ -69,9 +69,9 @@ class ToDoList {
 
   loadFromStorage = () => {
     const storage = localStorage.getItem('tasks');
-    
+
     this.removeAllComplete();
-    
+
     if (!storage) { return; }
     const objects = storage.split('|');
 
