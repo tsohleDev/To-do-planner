@@ -1,6 +1,14 @@
 # To Do list<!---Title of Project-->
 <a name="readme-top"></a>
 
+<div align="center">
+
+  <img src="/images/murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
+
+  <h3><b>Microverse</b></h3>
+
+</div>
 
 ## To Do list: Final Product <!---Title of Project-->
 
