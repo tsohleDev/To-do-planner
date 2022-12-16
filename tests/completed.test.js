@@ -10,12 +10,10 @@ const toDoList = new ToDoList(section, []);
 
 describe('toggling the complete checkbox', () => {
     beforeEach(() => {
-        window.localStorage.clear();
+        localStorage.clear();
       });
       
     test('change complete to incomplete', () => {
-        window.localStorage.clear();
-
         const task = new Task('write a task', true, toDoList);
         toDoList.add(task);
 
