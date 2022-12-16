@@ -96,7 +96,8 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://tsohle.me/To-do-planner)
+- [Live Demo Link]( https://tsohleDev.github.io/To-do-planner/dist/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
