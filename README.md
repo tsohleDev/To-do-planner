@@ -83,7 +83,7 @@ Here are some features of the page:
 
 
 
-[To Do list live demo](https://tsohle.me/To-do-planner/dist/)
+[To Do list live demo]( https://tsohleDev.github.io/To-do-planner/dist/)
 
 
 
