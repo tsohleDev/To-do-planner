@@ -39,16 +39,14 @@ class Task {
   }
 
   set readOnly(b) {
-    console.log(this.#readOnly)
     this.#readOnly = b;
-    this.completed = this.#readOnly
-    this.checkBox.node.checked = this.#readOnly
-    console.log(this.#readOnly)
+    this.completed = this.#readOnly;
+    this.checkBox.node.checked = this.#readOnly;
     this.#updateHtmlNode();
-  } 
+  }
 
-  get readOnly(){
-    return this.#readOnly
+  get readOnly() {
+    return this.#readOnly;
   }
 
   removeSelf = () => {
