@@ -98,7 +98,7 @@ Here are some features of the page:
 
 - Open the command prompt in the created directory.
 
-- On the terminal run this command git clone [git@github.com:tsohleDev/To-do-planner.git]
+- On the terminal run this command git clone [https://github.com/tsohleDev/To-do-planner.git]
 
 - Go to the repository folder using command prompt cd To-do-planner
 
