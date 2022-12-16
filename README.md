@@ -200,6 +200,7 @@ Give a ⭐️ if you like this project!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 Lucas Erkana
+<br>
 <img src="/images/github.svg" alt="logo" width="18"  height="18" />[githubhandle](https://github.com/Lucash2022)
 <br>
 <img src="/images/twitter.svg" alt="logo" width="18"  height="18" /> [twitterhandle](https://twitter.com/@Lucas_David_22)
