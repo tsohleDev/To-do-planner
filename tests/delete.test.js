@@ -33,3 +33,53 @@ describe('delete task using the delete method', () => {
     expect(toDoList.array.length).toBe(5 - numberOfDeletedTasks);
   });
 });
+
+describe('delete all completed', () => {
+  test('delete completed and leave incomplete', () => {
+    const tasks = [new Task('write a task', false, toDoList),
+      new Task('write a book', true, toDoList),
+      new Task('write a letter', true, toDoList),
+      new Task('write a email', true, toDoList),
+      new Task('write a assignmet', false, toDoList),
+    ];
+
+    toDoList.array = [];
+    tasks.forEach((task) => toDoList.add(task));
+
+    toDoList.removeAllComplete();
+
+    expect(toDoList.array.length).toBe(2);
+  });
+
+  test('when none is completed', () => {
+    const tasks = [new Task('write a task', false, toDoList),
+      new Task('write a book', false, toDoList),
+      new Task('write a letter', false, toDoList),
+      new Task('write a email', false, toDoList),
+      new Task('write a assignmet', false, toDoList),
+    ];
+
+    toDoList.array = [];
+    tasks.forEach((task) => toDoList.add(task));
+
+    toDoList.removeAllComplete();
+
+    expect(toDoList.array.length).toBe(5);
+  });
+
+  test('when all are completed', () => {
+    const tasks = [new Task('write a task', true, toDoList),
+      new Task('write a book', true, toDoList),
+      new Task('write a letter', true, toDoList),
+      new Task('write a email', true, toDoList),
+      new Task('write a assignmet', true, toDoList),
+    ];
+
+    toDoList.array = [];
+    tasks.forEach((task) => toDoList.add(task));
+
+    toDoList.removeAllComplete();
+
+    expect(toDoList.array.length).toBe(0);
+  });
+});

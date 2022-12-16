@@ -41,13 +41,13 @@ class ToDoList {
       }
       return !task.completed;
     });
+
     this.store();
   }
 
   #appendToDIv = (task) => {
     const div = document.createElement('div');
     task.appendTo(div);
-    task.readOnly = true;
     this.section.appendChild(div);
   }
 
