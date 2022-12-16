@@ -1,35 +1,25 @@
+# To Do list<!---Title of Project-->
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
-
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <!-- <img src="murple_logo.png" alt="logo" width="140"  height="auto" /> -->
+
+  <img src="/images/murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>To do planner README</b></h3>
+  <h3><b>Microverse</b></h3>
 
 </div>
+
+## To Do list: Final Product <!---Title of Project-->
+
+"To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. You will build a simple website that allows for doing that, and you will do it using ES6 and Webpack!
+
+Project 1:In this project, I will build a simple HTML list of To Do tasks. The list will be styled according to the specifications listed later in this lesson. This simple web page will be built using webpack and served by a webpack dev server.
+
+Project 2: In this project, I will implement the CRUD (create, read, update, delete) methods. All the elements of the user interface will be fully functional and your application will be completed.
+
+Project 3:In this project, I will add some functionality to your application to make it interactive. The user will also be able to mark task completion by selecting the corresponding checkbox (or undo it by unchecking the checkbox). The updated tasks list will be stored in local storage.
+
 
 <!-- TABLE OF CONTENTS -->
 
@@ -37,56 +27,53 @@ After you're finished please remove all the comments and instructions!
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  <!-- - [Deployment](#triangular_flag_on_post-deployment) -->
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-<!-- - [❓ FAQ](#faq) -->
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 To do planner <a name="about-project"></a>
+# 📖 Project name<a name="about-project"></a> <!---Project title-->
+<table style="border: 2px solid black;">
+  <tr>
+    <th style="border: 1px solid black;">Empty List</th>
+    <th style="border: 1px solid black;">Filled List</th>
+     <th style="border: 1px solid black;">Checked List</th>
+     <th style="border: 1px solid black;">Delete List</th>
 
-> A daily planner of tasks in the browser
+  </tr>
+  <tr style="border: 2px solid black;">
+  <td style="border: 1px solid black;"><img src="/images/DesktopVersionADD.jpg" alt="Desktop Version" width="250"  height="200" /></td>
+  <td style="border: 1px solid black;"><img src="/images/DesktopVersionLIST.jpg" alt="Desktop Version" width="250"  height="200" /></td>
+  <td style="border: 1px solid black;"><img src="/images/DesctopVersionChecked.jpg" alt="Desktop Version" width="250"  height="200" /></td>
+  <td style="border: 1px solid black;"><img src="/images/DesctopVersionDelete.jpg" alt="Desktop Version" width="250"  height="200" /></td>
+  </tr>
+</table>
+**To-do list**  is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. You will build a simple website that allows for doing that, and you will do it using ES6 and Webpack! 
 
-**To do planner** is a website in which one could plan and track their activities of each day.
+Here are some features of the page:
+
+<ul>
+  <li>Type content to be added</li>
+  <li>Select items on the list</li>
+   <li>Add items to listt</li>
+   <li>Edit items in list</li>
+  <li>Delete items from list</li>
+</ul>
+
+
+
 
 ## 🛠 Built With <a name="built-with"></a>
+    HTML
+    CSS
+    Javascript
 
-### Tech Stack <a name="tech-stack"></a>
-
-> Tech stack used.
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li>Vanilla js</li>
-    <li>HTML</li>
-    <li>CSS</li>
-  </ul>
-</details>
-
-<!-- Features -->
-
-### Key Features <a name="key-features"></a>
-
-> To do planner is a practical tool as it -->
-
-- **You can add and remove tasks to do**
-- **Mark each task as completed or not**
-- **Restart with an empty list each day**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -94,25 +81,45 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
 
-- [Live Demo Link]( https://tsohleDev.github.io/To-do-planner/dist/)
+
+
+[To Do list live demo]( https://tsohleDev.github.io/To-do-planner/dist/)
+
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
+- Create a local directory that you want to clone the repository.
 
-To get a local copy up and running, follow these steps.
+- Open the command prompt in the created directory.
+
+- On the terminal run this command git clone [https://github.com/tsohleDev/To-do-planner.git]
+
+- Go to the repository folder using command prompt cd To-do-planner
+
+
+- Install the dev dependencies for linters run npm install.
+
+- To start run npm start
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Prerequisites
 
 In order to run this project you need:
 
+-A working browser application (Google chrome, Mozilla Fire fox, Microsoft edge ...)
+
+-VSCode or any other equivalent code editor
+
+-Node Package Manager (For running, debuging, or installing dependancies to be used)
 
 node and npm:
 
@@ -124,67 +131,39 @@ node and npm:
 
 [download and install](https://nodejs.org/en/)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### Setup
 
 Clone this repository to your desired folder:
 
-```sh
-  cd my-folder
-  git clone git@github.com:tsohleDev/To-do-planner.git
-```
+- Open the command prompt in the created directory.
 
-### Install
+- On the terminal run this command git clone https://github.com/tsohleDev/To-do-planner.git
 
-Install this project with:
+- Go to the repository folder using command prompt cd To-do-planner
 
-```sh
-  cd to-do-planner
-  npm i webpack webpack-cli webpeck-dev-server --save-dev
-  npm i html-webpack-plugin --save-dev
-  npm i css-loader style-loader
-```
+- Install the dev dependencies for linters run npm install.
 
-### Usage
+- To start run npm start
+--->
 
-To run the project, execute the following command:
-
-```sh
-  npm start
-```
-
-### Run tests
-
-To run tests, run the following command:
-
-```sh
-  npm test
-```
-
-<!-- ### Deployment
-
-You can deploy this project using: -->
-
-<!--
-Example:
-
-```sh
-
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
+<!-- Author -->
 
-## 👥 Authors <a name="authors"></a>
+## 👤**Authors** <a name="authors"></a>
+<h4>Tsohle Mokhemisi </h4>
 
-> Collaborators of this project.
+<img src="/images/github.svg" alt="logo" width="18"  height="18" />[githubhandle](https://github.com/tsohleDev2)
+<br>
+<img src="/images/twitter.svg" alt="logo" width="18"  height="18" /> [twitterhandle](https://twitter.com/RealTsohle)
+<br>
+<img src="/images/linkedin.svg" alt="logo" width="18"  height="18" />[linkedIn](https://www.linkedin.com/in/tsohle-mokhemisi-3687401b2/)
 
-👤 **Author**
 
-- GitHub: [@githubhandle](https://github.com/tsohleDev)
-- Twitter: [@twitterhandle](https://twitter.com/RealTsohle)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tsohle-mokhemisi-3687401b2/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -192,9 +171,10 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Features to be added to the project.
 
-- [ ] **Rearrange tasks by drag and drop**
+- Implement additional pages, which will allow the user to Register
+
+- Implement additional pages, which will allow the user to Login
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -202,9 +182,11 @@ Example:
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome!
+> Credits to everyone who inspired the codebase.
 
-Feel free to check the [issues page](../../issues/).
+I would like to thank [Microverse](https://www.microverse.org/)
+
+Feel free to check the [issues page](https://github.com/tsohleDev/To-do-planner/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -212,37 +194,38 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> A message to readers
-
-If you like this project please give me a star
+Give a ⭐️ if you like this project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+Lucas Erkana
+<br>
+<img src="/images/github.svg" alt="logo" width="18"  height="18" />[githubhandle](https://github.com/Lucash2022)
+<br>
+<img src="/images/twitter.svg" alt="logo" width="18"  height="18" /> [twitterhandle](https://twitter.com/@Lucas_David_22)
+<br>
+<img src="/images/linkedin.svg" alt="logo" width="18"  height="18" />[linkedIn](https://www.linkedin.com/in/lucas-erkana-b30a0b3b/)
+  <br>
+<img src="/images/facebook.svg" alt="logo" width="18"  height="18" />[facebook](https://www.facebook.com/lucash.toni)
 
-> Credits to everyone who inspired the codebase.
 
-I would like to thank [Microverse](https://www.microverse.org/)
+[Font Awesome](https://fontawesome.com/search?q=book&o=r)
+
+[Icons8](https://icons8.com/icons/set/books)
+
+[Google Fonts](https://developers.google.com/fonts)
+
+[Bootsrtap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
+
+[Luxon](https://imdac.github.io/modules/js/luxon/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
 
-<!-- ## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- LICENSE -->
 
