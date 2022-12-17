@@ -100,14 +100,25 @@ Here are some features of the page:
 
 - Open the command prompt in the created directory.
 
-- On the terminal run this command git clone [https://github.com/tsohleDev/To-do-planner.git]
+- On the terminal run this command -
 
-- Go to the repository folder using command prompt cd To-do-planner
+```sh
+ git clone [https://github.com/tsohleDev/To-do-planner.git]
+```
 
+- Go to the repository folder using command prompt
+```sh
+ cd To-do-planner
+```
 
-- Install the dev dependencies for linters run npm install.
-
-- To start run npm start
+- Install the dev dependencies for linters run
+```sh
+ npm install.
+```
+- To start run
+```sh
+ npm start
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -139,14 +150,25 @@ Clone this repository to your desired folder:
 
 - Open the command prompt in the created directory.
 
-- On the terminal run this command git clone https://github.com/tsohleDev/To-do-planner.git
+- On the terminal run this command 
+```sh
+git clone https://github.com/tsohleDev/To-do-planner.git
+```
 
-- Go to the repository folder using command prompt cd To-do-planner
+- Go to the repository folder using command prompt
+```sh
+ cd To-do-planner
+```
 
-- Install the dev dependencies for linters run npm install.
+- Install the dev dependencies for linters 
+```sh
+ run npm install.
+```
 
-- To start run npm start
---->
+- To start run 
+```sh
+npm start
+```
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
